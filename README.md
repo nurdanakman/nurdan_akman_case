@@ -69,6 +69,8 @@ Run the following command to install required packages:
 
 ```bash
 pip install -r requirements.txt
+or
+pip3 install -r requirements.txt
 ```
 
 ### Running Apı Test with Pytest
