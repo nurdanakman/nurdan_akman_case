@@ -47,9 +47,19 @@ nurdan_akman_case/
 - Pip package installer
 - Clone the repository
 
-```bash
+   ```bash
    git clone https://github.com/nurdanakman/nurdan_akman_case.git
-  ```
+   ```
+
+- Run the following command to install the required packages
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+   or
+   ```bash
+   pip3 install -r requirements.txt
+   ```
 ---
 
 
@@ -64,45 +74,40 @@ The API tests interact with the **pet** endpoints on [Swagger Petstore](https://
 
 ##  Installation
 
-### Install Dependencies
-Run the following command to install required packages:
-
-```bash
-pip install -r requirements.txt
-or
-pip3 install -r requirements.txt
-```
-
 ### Running Apı Test with Pytest
 
 - For Windows:
-```bash
-cd api_test/
-python -m pytest
-```
+   ```bash
+   cd api_test/
+   python -m pytest
+   ```
 - For MacOS:
-```bash
-cd api_test/
-python3 -m pytest
-```
+   ```bash
+   cd api_test/
+   python3 -m pytest
+   ```
 
 ### Running Specific Test Groups
 
 To run only specific groups of tests, use the -m flag with either the negative or positive marker.
 
 - Run Negative Test Scenarios:
-```bash
-python -m pytest -v -m negative
-or
-python3 -m pytest -v -m negative
-```
+   ```bash
+   python -m pytest -v -m negative
+   ```
+   or
+   ```bash
+   python3 -m pytest -v -m negative
+   ```
 
 - Run Positive Test Scenarios:
-```bash
-python -m pytest -v -m negative
-or
-python3 -m pytest -v -m positive
-```
+   ```bash
+   python -m pytest -v -m positive
+   ```
+   or
+   ```bash
+   python3 -m pytest -v -m positive
+   ```
 
 ---
 # N11 Load Testing with Locust & Playwright
@@ -129,14 +134,14 @@ pip install -r requirements.txt
 The project requires playwright to manage to browser activites for performance test with Locust.
 
 - For Windows:
-```bash
-python -m playwright install
-```
+   ```bash
+   python -m playwright install
+   ```
 - For MacOS:
 
-```bash
-python3 -m playwright install
-```
+   ```bash
+   python3 -m playwright install
+   ```
 
 ###  Configuration
 
@@ -159,15 +164,15 @@ duration **"2m"** value could be set to desired duration. As a requirement of th
 ### Running Load Test with Locust
 
 - For Windows:
-```bash
-cd load_test/
-python locust_test.py
-```
+   ```bash
+   cd load_test/
+   python locust_test.py
+   ```
 - For MacOS:
-```bash
-cd load_test/
-python3 locust_test.py
-```
+   ```bash
+   cd load_test/
+   python3 locust_test.py
+   ```
 
 ## Load Test Report
 
@@ -196,33 +201,37 @@ pip install -r requirements.txt
 ### Running UI Test with Pytest
 
 - For Windows:
-```bash
-cd ui_test/
-python -m pytest
-```
+   ```bash
+   cd ui_test/
+   python -m pytest
+   ```
 - For MacOS:
-```bash
-cd ui_test/
-python3 -m pytest
-```
+   ```bash
+   cd ui_test/
+   python3 -m pytest
+   ```
 
 ### Running Specific Browser
 
 To run tests with different browsers, commands below can be used. If browser option is not specified, tests will run on Chrome as default.
 
 - Run Test on Firefox browser:
-```bash
-python -m pytest --browser firefox
-or
-python3 -m pytest --browser firefox
-```
+   ```bash
+   python -m pytest --browser firefox
+   ```
+   or
+   ```bash
+   python3 -m pytest --browser firefox
+   ```
 
 - Run Test on Chrome browser:
-```bash
-python -m pytest --browser chrome
-or
-python3 -m pytest --browser chrome
-```
+   ```bash
+   python -m pytest --browser chrome
+   ```
+   or
+   ```bash
+   python3 -m pytest --browser chrome
+   ```
 
 ---
 If you have any questions about the task, please don't hesitate the contact me via akman.nurdann@gmail.com
